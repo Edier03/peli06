@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+
+    text-align: center;
+    font-family: sans-serif;
+    color: #fefefe;
+  }
+  .uno{
+    width: 1100px;
+    border: solid white;
+    margin: auto;
+    margin-top: 50px;
+    background: #035;
+  }
+  .container {
+
+    position: relative;
+    width: 100px;
+    height: 300px;
+    margin: 10px auto 0 auto;
+    perspective: 1000px;
+  }
+  
+  .carousel {
+    position: absolute;
+   width: 80%;
+  height: 80%;
+    transform-style: preserve-3d; 
+    animation: rotate360 50s infinite forwards linear;
+  }
+  .carousel__face { 
+    border-radius: 10px;
+    border: solid black;
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+/*    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);*/
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+  }
+
+  
+/*  span {
+    margin: auto;
+    font-size: 2rem;
+  }*/
+  
+  
+  .carousel__face:nth-child(1) {
+    background-image: url("https://play-lh.googleusercontent.com/bcqwDXHRocXGgHs0MwfPV7VgIhGAhCylVyhmhgQeASGotWaUs0KeKNIoboyiAXAWw6M=w200-h300-rw");
+    transform: rotateY(  0deg) translateZ(430px); }
+  .carousel__face:nth-child(2) { 
+    background-image: url("https://play-lh.googleusercontent.com/DMzr2gO7UtuzZEkqnrU66cuh12JGB7nqpAXDc51eOmwMcBkB5hxjKGTfEffdfloSnL0=w200-h300-rw");
+      transform: rotateY( 20deg) translateZ(430px); }
+  .carousel__face:nth-child(3) {
+    background-image: url("https://play-lh.googleusercontent.com/A_57S_tkHnk9nKPSTOxfNk5MnUlTW9MwPgUOD0jOH5z1nlFLwPJ-tvZPBTyiEEH4mZo=w200-h300-rw");
+    transform: rotateY( 40deg) translateZ(430px); }
+  .carousel__face:nth-child(4) {
+    background-image: url("img/acción/007_Operación_Skyfall.webp");
+    transform: rotateY(60deg) translateZ(430px); }
+  .carousel__face:nth-child(5) { 
+    background-image: url("img/acción/Agente_bajo_fuego.webp");
+   transform: rotateY(80deg) translateZ(430px); }
+  .carousel__face:nth-child(6) { 
+    background-image: url("img/acción/Aquaman.webp");
+   transform: rotateY(100deg) translateZ(430px); }
+  .carousel__face:nth-child(7) {
+    background-image: url("img/acción/Aves_de_presa.webp");
+   transform: rotateY(120deg) translateZ(430px); }
+  .carousel__face:nth-child(8) {
+    background-image: url("img/acción/Batman_v_Superman_El_origen_de_la_justicia_.webp");
+    transform: rotateY(140deg) translateZ(430px); }
+  .carousel__face:nth-child(9) {
+    background-image: url("img/acción/Casino_Royale_.webp");
+    transform: rotateY(160deg) translateZ(430px); }
+.carousel__face:nth-child(10){
+    background-image: url("img/acción/El_Hobbit_La_batalla_de_los_cinco_ejércitos.webp");
+    transform: rotateY(180deg) translateZ(430px);
+}
+.carousel__face:nth-child(11){
+    background-image: url("img/acción/Hulk_El_Hombre_Increible.webp");
+    transform: rotateY(200deg) translateZ(430px);
+}
+.carousel__face:nth-child(12){
+    background-image: url("img/acción/El_Sorprendente_Hombre_Araña_.webp");
+    transform: rotateY(220deg) translateZ(430px);
+}
+.carousel__face:nth-child(13){
+    background-image: url("img/acción/f2.webp");
+    transform: rotateY(240deg) translateZ(430px);
+}
+.carousel__face:nth-child(14){
+    background-image: url("img/acción//megalodon.webp");
+    transform: rotateY(260deg) translateZ(430px);
+}
+.carousel__face:nth-child(15){
+    background-image: url("img/acción/Rapidos_y_Furiosos_7.webp");
+    transform: rotateY(280deg) translateZ(430px);
+}
+.carousel__face:nth-child(17){
+    background-image: url("img/acción/La_gran_muralla.webp");
+    transform: rotateY(300deg) translateZ(430px);
+}
+.carousel__face:nth-child(18){
+    background-image: url("img/acción/Rápidos_y_furiosos_Hobbs_Shaw.webp");
+    transform: rotateY(320deg) translateZ(430px);
+}
+.carousel__face:nth-child(19){
+    background-image: url("img/acción/Titanes_del_Pacífico_La_insurrección.webp");
+    transform: rotateY(340deg) translateZ(430px);
+}
+.carousel__face:nth-child(20){
+    background-image: url("img/acción/Troya.webp");
+    transform: rotateY(360deg) translateZ(430px);
+}
+  
+  
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+  
